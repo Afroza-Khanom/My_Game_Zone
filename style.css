@@ -1,31 +1,57 @@
-
-nav .logo{
-    float: left;
+.navbar{
+    border: 1px black solid;
     display: flex;
-    padding-left: 12%;
-    /* padding-bottom: 0%;  */
+    justify-content: space-around;
 }
-nav .logo img{
-    float: left;
+
+.navbar-container{
+    border: 1px black solid;
+    display: inline-flex;
+    
+}
+.navbar-container img{
     padding-top: 1em;
-    height: 8vh;
 }
-nav .logo h1{
-    font-size:30px;
-    font-weight: 800;
-    float: right;
-    padding-top: 0em;
-    height: 5vh;
+.navbar-container h1{
+    font-size: 30px;
+    font-weight: 900;
 }
-nav .menu-container{
-    float: right;
-    padding-right: 12%;
+
+.menubar{
+    border: 1px black solid;
     padding-top: 1.5em;
 }
-nav .menu-container a{
+.menubar a{
     text-decoration: none;
-    color: black;
-    text-align: center;
-    padding: 0.5em;
-    font-size: 20px;
+    color:black;
+    padding: 1em;
+    font-size: 18px;
+}
+section{
+    border: 1px black solid;
+    background-image: url("./images/Group_14.png");
+    display: flex;
+    justify-content: space-around;
+}
+section .banner-heading{
+    padding-top: 3em;
+}
+section .banner-heading h1{
+    font-size: 40px;
+}
+section .banner-heading .color-heading{
+    font-size: 40px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0px;
+}
+section button{
+    background-color: magenta;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    margin-left: 1em;
 }
