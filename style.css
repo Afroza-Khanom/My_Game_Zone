@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
 }
-
 .navbar-container{
     display: inline-flex;
 }
@@ -27,6 +26,8 @@ section{
     background-image: url("./images/Group_14.png");
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 section .banner-heading{
     padding-top: 3em;
@@ -51,10 +52,10 @@ section button{
     margin-left: 1em;
 }
 .first-section{
-    margin-left: 2em;
-    background-color: rgba(248, 237, 223, 0.966);
+    background-color: rgba(252, 245, 237, 0.925);
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .first-section-heading{
     margin-top: 3em;
@@ -146,6 +147,7 @@ section button{
 
 .third-section{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 5em;
     margin-left: 5em;
@@ -188,6 +190,7 @@ section button{
     justify-content: space-around;
     padding: 2em;
     color: #fff;
+    flex-direction: row;
 }
 .fifth-section .heading-two-col{
     display: flex;
@@ -276,3 +279,79 @@ footer .paragraph p{
     padding: 1em;
 }
 
+@media screen and (max-width:576px) {
+    .navbar{
+        display:block;
+        margin-left: 35%;
+    }
+    .menubar a{
+        display: block;
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    section img{
+        width: 400px;
+    }
+    section .banner-heading{
+        margin-left: 15%;
+    }
+    .first-section{
+        flex-direction: column;
+    }
+    .first-section img{
+        width: 400px;
+    }
+    .first-section .first-section-heading{
+        text-align: center;
+    }
+    .second-section .image-section{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 20%;
+    }
+    .third-section{
+        flex-direction: column-reverse;
+    }
+    .third-section .third-section-heading{
+        text-align: center;
+    }
+    .third-section .third-section-img img{
+        width: 120%;
+    }
+    .fifth-section{
+        flex-direction: column;
+    }
+    .fifth-section img{
+        width: 100%;
+    }
+    .last-second-section{
+        grid-template-columns: (3, 1fr);
+    }
+    .last-second-section img{
+        width: fit-content;
+    }
+    footer .paragraph{
+        margin-left:5em;
+    }
+    footer .paragraph p{
+         padding: 1em;
+         display: inline-block;
+         margin-right: 1em;
+         color: #fff;
+    }
+    .icon-list{
+        text-decoration: none;
+        color: #fff;
+        list-style-type: none;
+        margin-left: 36%;
+    }
+    .icon-list li{
+        display: inline-block;
+        /* padding: 1em; */
+    }
+    .para-list{
+        color: #ffffffad;
+        /* margin-left: 25%; */
+    }
+}
