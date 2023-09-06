@@ -1,13 +1,10 @@
 .navbar{
-    border: 1px black solid;
     display: flex;
     justify-content: space-around;
 }
 
 .navbar-container{
-    border: 1px black solid;
     display: inline-flex;
-    
 }
 .navbar-container img{
     padding-top: 1em;
@@ -18,7 +15,6 @@
 }
 
 .menubar{
-    border: 1px black solid;
     padding-top: 1.5em;
 }
 .menubar a{
@@ -28,7 +24,6 @@
     font-size: 18px;
 }
 section{
-    border: 1px black solid;
     background-image: url("./images/Group_14.png");
     display: flex;
     justify-content: space-around;
@@ -57,7 +52,6 @@ section button{
 }
 .first-section{
     margin-left: 2em;
-    border: 1px black solid;
     background-color: rgba(248, 237, 223, 0.966);
     display: flex;
     justify-content: space-between;
@@ -187,5 +181,98 @@ section button{
     top: 300px;
     left: -100px;
   }
-
+.fifth-section{
+    display: flex;
+    margin-top: 8em;
+    background-image: url("./images/Group_14.png"), linear-gradient(to right, rgba(255, 0, 170, 0.37), rgb(255, 0, 128));
+    justify-content: space-around;
+    padding: 2em;
+    color: #fff;
+}
+.fifth-section .heading-two-col{
+    display: flex;
+    justify-content: space-between;
+}
+.fifth-section .heading-two-col .first-col{
+    text-align: left;
+}
+.fifth-section .heading-two-col .second-col{
+    text-align: right;
+}
+.fifth-section-heading button{
+    border: none;
+    border-radius:20px;
+    padding: 1em 3em;
+    background-color: #fff;
+    color: magenta;
+    font-weight: 800;
+}
+.last-second-section{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .last-second-section .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.3em 2em;
+    font-weight: 800;
+  }
+  .last-second-section .container img{
+    width: 20%;
+  }
+  .last-second-section .container:hover{
+    border: 2px magenta solid;
+    border-radius: 30px;
+  }
+  footer{
+    background-color: #0B0223;
+    margin-top: 5em;
+  }
+  footer .footer-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+.footer-container img{
+    padding-top: 1em;
+}
+.footer-container h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+footer .paragraph{
+    margin-left:15em;
+}
+footer .paragraph p{
+     padding: 1em;
+     display: inline-block;
+     margin-right: 3em;
+     color: #fff;
+}
+.icon-list{
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    margin-left: 36%;
+}
+.icon-list li{
+    display: inline-block;
+    padding: 1em;
+}
+.para-list{
+    color: #ffffffad;
+    margin-left: 25%;
+}
+.para-list p{
+    display: inline-block;
+    padding: 1em;
+}
 
