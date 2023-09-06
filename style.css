@@ -50,7 +50,35 @@ section .banner-heading .color-heading{
 section button{
     background-color: magenta;
     color: white;
-    padding: 1em;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 20px;
+    margin-left: 1em;
+}
+.first-section{
+    margin-left: 2em;
+    border: 1px black solid;
+    background-color: rgba(248, 237, 223, 0.966);
+    display: flex;
+    justify-content: space-between;
+}
+.first-section-heading{
+    margin-top: 3em;
+    text-align: right;
+    margin-right: 10%;
+}
+.first-section-heading .color-heading{
+    font-size: 40px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0px;
+}
+.first-section-heading button{
+    background-color: magenta;
+    color: white;
+    padding: 1em 2em;
     border: none;
     border-radius: 20px;
     margin-left: 1em;
